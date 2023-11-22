@@ -58,7 +58,7 @@ function mostrarDatosCurso(curso) {
   cursoContainer.innerHTML = `
   <h1 class="text-3xl pt-[2rem] font-semibold"> Cursos</h1>
   <div class="max-w-sm mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] sm:shrink-0 sm:grow sm:basis-0">
-  <img class="rounded-t-lg" src="/static/img/${curso.imagen}" alt="${curso.nombrecurso}">
+  <img class="rounded-t-lg" src="./img/${curso.imagen}" alt="${curso.nombrecurso}">
   <div class="flex-1 flex-col p-6 flex">
     <h5 class="mb-2 text-xl font-medium leading-tight text-gray-900">${curso.nombrecurso}</h5>
     <p class="mb-4 text-base text-neutral-900">${curso.presentacion}</p>
