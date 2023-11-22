@@ -29,13 +29,32 @@
  }
 
  function mostrarDatosPerfil(perfil) {
-   var perfilContainer = document.getElementById("perfilContainer");
+  //  var perfilContainer = document.getElementById("perfilContainer");
 
-   var ul = document.createElement("ul");
-   for (var key in perfil) {
-     var li = document.createElement("li");
-     li.textContent = key + ": " + perfil[key];
-     ul.appendChild(li);
+  //  var ul = document.createElement("ul");
+  //  for (var key in perfil) {
+  //    var li = document.createElement("li");
+  //    li.classList.add("font-", "ml-5");
+  //    li.textContent = key + ": " + perfil[key];
+  //    ul.appendChild(li);
+
+  //    <ul class="text-lg pt-4">
+  //    <li >nombreyapellido: <span class="font-semibold">pedro</span></li>
+  //    <li>dni: <span class="font-semibold">46879056</span></li>
+  //    <li>email: <span class="font-semibold">pedro@gmail.com </span></li>
+  //    <li>telefono: <span class="font-semibold">123456789</span></li>
+  //  </ul>
+
+  const ul = document.createElement("ul");
+  ul.classList.add("text-lg", "pt-4");
+  for (const key in perfil) {
+    const li = document.createElement("li");
+    li.textContent = key + ": ";
+    const span = document.createElement("span");
+    span.classList.add("font-semibold");
+    span.textContent = perfil[key];
+    li.appendChild(span);
+    ul.appendChild(li);
    }
 
    perfilContainer.appendChild(ul);
