@@ -31,8 +31,8 @@ document.getElementById("registroForm").addEventListener("submit", function (eve
         <input type="text" placeholder="Nombre y apellido" id="nombreyapellido" class="input__style " required />
       </div>
             <div class="mb-6">
-        <label for="mail">Email:</label>
-        <input type="email" placeholder="Nombre y apellido" id="mail" class="input__style " required />
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Nombre y apellido" id="email" class="input__style " required />
       </div>
       <div class="mb-6">
         <label for="curso">Email:</label>
@@ -59,7 +59,7 @@ document.getElementById("registroForm").addEventListener("submit", function (eve
             var datos = {
               dni: dniInput,
               nombreyapellido: document.getElementById("nombreyapellido").value,
-              mail: document.getElementById("mail").value,
+              email: document.getElementById("email").value,
               curso: document.getElementById("curso").value,
               contrasenia: document.getElementById("contrasenia").value
             };
