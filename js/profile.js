@@ -25,7 +25,7 @@
      });
  } else {
    // Si no se encuentra el ID del registro en el almacenamiento local, redirigir a login.html
-   window.location.href = "login.html";
+   window.location.href = "index.html";
  }
 
  function mostrarDatosPerfil(perfil) {

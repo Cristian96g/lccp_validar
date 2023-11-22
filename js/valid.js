@@ -22,7 +22,7 @@ document.getElementById("registroForm").addEventListener("submit", function (eve
         if (dniExiste) {
           alert("El número de DNI ya existe en un registro.");
           // Redirigir al usuario a login.html
-          window.location.href = "login.html";
+          window.location.href = "index.html";
         } else {
 
           document.getElementById("registroForm").innerHTML = `
@@ -75,7 +75,7 @@ document.getElementById("registroForm").addEventListener("submit", function (eve
                 document.getElementById("registroForm").reset();
 
                 // Redirigir al usuario a login.html
-                window.location.href = "login.html";
+                window.location.href = "index.html";
               })
               .catch(function (error) {
                 alert("Ha ocurrido un error. Por favor, intenta nuevamente.");
