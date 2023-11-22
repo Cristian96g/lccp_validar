@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link href="./dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./src/input.css">
+</head>
+
+<body>
+  <div class="card h-fit max-w-xl mx-auto px-5 md:p-4 mt-[8rem]" id="loginForm">
+    <h1 class="text-3xl text-center pb-8 font-medium">Inicio de sesion en <span class="font-bold">EduFlex</span></h1>
+    <div class="relative rounded-lg bg-white px-8 shadow-lg sm:p-12">
+      <form id="loginForm" class="max-w-[400px] mx-auto">
+        <h1 class="text-2xl font-semibold text-center mb-8">Iniciar Sesion</h1>
+        <div class="mb-6">
+          <label for="dni">DNI:</label>
+          <input type="text" placeholder="dni" id="dni" class="input__style " required />
+        </div>
+        <div class="mb-6">
+          <label for="contrasenia">Contraseña:</label>
+          <input type="password" placeholder="contraseña" id="contrasenia" class="input__style" required />
+        </div>
+        <div>
+          <input type="submit" value="Iniciar Sesión"
+            class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-[96px] btn-color focus:ring-4 focus:ring-primary-300 w-full" />
+
+        </div>
+      </form>
+      <div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/login.js"></script>
+</body>
+
+</html>

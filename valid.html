@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Formulario de Registro</title>
+  <link href="./dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./src/input.css">
+</head>
+
+<body>
+  <div class="card h-fit max-w-xl mx-auto px-5 md:p-4 mt-[8rem]">
+    <h1 class="text-3xl text-center pb-8 font-medium">Registrarse en <span class="font-bold">EduFlex</span></h1>
+    <div class="relative rounded-lg bg-white px-8 shadow-lg sm:p-12">
+      <form id="registroForm" class="max-w-[400px] mx-auto">
+        <h1 class="text-2xl font-semibold text-center mb-8">Registro</h1>
+        <div class="mb-6">
+          <label for="dni">DNI:</label>
+          <input type="text" placeholder="dni" id="dni" class="input__style " required />
+        </div>
+        <div>
+          <input type="submit" value="Verificar DNI"
+            class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-[96px] btn-color focus:ring-4 focus:ring-primary-300 w-full " />
+        </div>
+      </form>
+      <div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/valid.js"></script>
+</body>
+
+</html>

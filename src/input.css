@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.input__style {
+    width: 100%;
+    border: 1px solid #d1f6fc;
+    border-radius: 0.25rem;
+    padding: 0.75rem 14px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.label__style{
+    display: block;
+    font-weight: 500;
+    --tw-text-opacity: 1;
+    color: rgb(17 24 39 / var(--tw-text-opacity));
+    font-size: 0.875rem/* 14px */;
+    line-height: 1.25rem/* 20px */;
+    margin-bottom: 0.5rem/* 8px */;
+}
+
+.title__main {
+    font-weight: 600;
+    line-height: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.title__main.text-left {
+    text-align: left;
+}
+
+.btn-color{
+    background-color: #0f82a9;
+}
+
+.btn-color:hover{
+    background-color: #136a8b;
+}
