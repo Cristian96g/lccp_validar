@@ -47,7 +47,7 @@ if (registroId) {
     });
 } else {
   // Si no se encuentra el ID del registro en el almacenamiento local, redirigir a login.html
-  window.location.href = "login.html";
+  window.location.href = "index.html";
 }
 // <a href="#!">
     // <img class="rounded-t-lg" src="/static/img/${curso.imagen}" alt="${curso.nombrecurso}">
@@ -58,7 +58,7 @@ function mostrarDatosCurso(curso) {
   cursoContainer.innerHTML = `
   <h1 class="text-3xl pt-[2rem] font-semibold"> Cursos</h1>
   <div class="max-w-sm mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] sm:shrink-0 sm:grow sm:basis-0">
-  <img class="rounded-t-lg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTte4M3obD2evis--3dTlQnrWRmDwbuneETQw&usqp=CAU">
+  <img class="rounded-t-lg" src="/static/img/${curso.imagen}" alt="${curso.nombrecurso}">
   <div class="flex-1 flex-col p-6 flex">
     <h5 class="mb-2 text-xl font-medium leading-tight text-gray-900">${curso.nombrecurso}</h5>
     <p class="mb-4 text-base text-neutral-900">${curso.presentacion}</p>
@@ -74,7 +74,7 @@ function cerrarSesion() {
   localStorage.removeItem("registroId");
 
   // Puedes redirigir al usuario a una página de inicio de sesión o realizar otras acciones de cierre de sesión si es necesario
-  window.location.href = "login.html";
+  window.location.href = "index.html";
 }
 
 const verPerfil = () => {
